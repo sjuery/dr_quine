@@ -6,7 +6,7 @@
 #    By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/31 11:28:46 by sjuery            #+#    #+#              #
-#    Updated: 2018/09/12 19:02:58 by sjuery           ###   ########.fr        #
+#    Updated: 2018/09/13 15:40:02 by sjuery           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ Sullyasm:
 clean:
 	printf '\033[31m[...] %s\n\033[0m' "Cleaning Sully Program"
 	/bin/rm -f $(NAME)
+	rm -rf Sully_*
 	printf '\033[32m[ ✔ ] %s\n\033[0m' "Cleaned Sully Program"
 
 fclean: clean
