@@ -6,7 +6,7 @@ char *generate_string() {
 }
 
 int main() {
-	int ftg = 500000;
+	int ftg = 5;
 	char tmp_string[50];
 
 	if(ftg > 0) {
