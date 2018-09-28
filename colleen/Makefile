@@ -6,14 +6,13 @@
 #    By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/31 11:28:46 by sjuery            #+#    #+#              #
-#    Updated: 2018/09/12 18:58:35 by sjuery           ###   ########.fr        #
+#    Updated: 2018/09/28 14:14:52 by sjuery           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= Colleen
 
 SRC		= 	Colleen.c
-SRCPP 	=	Colleen.cpp
 SRCASM	=	Colleen.s
 
 CFLAG	= -Wall -Wextra -Werror
@@ -25,11 +24,6 @@ $(NAME):
 	printf '\033[31m[...] %s\n\033[0m' "Creating Colleen (C) Program"
 	gcc $(CFLAG) $(SRC) -o $(NAME)
 	printf '\033[32m[ ✔ ] %s\n\033[0m' "Created Colleen (C) Program"
-
-Colleenpp:
-	printf '\033[31m[...] %s\n\033[0m' "Creating Colleen (CPP) Program"
-	clang++ $(CFLAG) $(SRCPP) -o $(NAME)
-	printf '\033[32m[ ✔ ] %s\n\033[0m' "Created Colleen (CPP) Program"
 
 Colleenasm:
 	printf '\033[31m[...] %s\n\033[0m' "Creating Colleen (ASM) Program"
