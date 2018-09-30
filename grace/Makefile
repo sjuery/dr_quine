@@ -6,14 +6,13 @@
 #    By: sjuery <sjuery@student.42.us.org>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/31 11:28:46 by sjuery            #+#    #+#              #
-#    Updated: 2018/09/13 15:39:19 by sjuery           ###   ########.fr        #
+#    Updated: 2018/09/28 14:18:45 by sjuery           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= Grace
 
 SRC		= 	Grace.c
-SRCPP 	=	Grace.cpp
 SRCASM	=	Grace.s
 
 CFLAG	= -Wall -Wextra -Werror
@@ -25,11 +24,6 @@ $(NAME):
 	printf '\033[31m[...] %s\n\033[0m' "Creating Grace (C) Program"
 	gcc $(CFLAG) $(SRC) -o $(NAME)
 	printf '\033[32m[ ✔ ] %s\n\033[0m' "Created Grace (C) Program"
-
-Gracepp:
-	printf '\033[31m[...] %s\n\033[0m' "Creating Grace (CPP) Program"
-	clang++ $(CFLAG) $(SRCPP) -o $(NAME)
-	printf '\033[32m[ ✔ ] %s\n\033[0m' "Created Grace (CPP) Program"
 
 Graceasm:
 	printf '\033[31m[...] %s\n\033[0m' "Creating Grace (ASM) Program"
